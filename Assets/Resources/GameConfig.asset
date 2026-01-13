@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GameConfig
   m_EditorClassIdentifier: Assembly-CSharp::GameConfig
   baseSpeed: 3
-  energyDrainRate: 1
+  energyDrainRate: 2
   scoreThresholds: 32000000960000005e010000bc020000
-  sessionDuration: 60
+  sessionDuration: 120

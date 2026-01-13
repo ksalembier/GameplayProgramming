@@ -34,8 +34,5 @@ public class MoveRightCommand : IPlayerCommand
 
 public class NeutralCommand : IPlayerCommand
 {
-    public void Execute(PlayerController player)
-    {
-        // intentionally does nothing
-    }
+    public void Execute(PlayerController player) { }
 }

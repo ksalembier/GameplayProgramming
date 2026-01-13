@@ -97,8 +97,5 @@ public class EnergyBarUI : MonoBehaviour
         PlayerController player = payload as PlayerController;
         if (player == null) return;
         if (player.playerID != playerID) return;
-
-        //if (animator != null)
-        //    animator.SetBool(ShakeParam, false);
     }
 }

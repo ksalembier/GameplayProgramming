@@ -570,7 +570,7 @@ Transform:
   m_GameObject: {fileID: 236124352}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.00952, y: -0.25797, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -675,51 +675,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266299480}
   m_CullTransparentMesh: 1
---- !u!1 &335455195
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 335455197}
-  - component: {fileID: 335455196}
-  m_Layer: 0
-  m_Name: FoodFactory
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &335455196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335455195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 707c0d19284b8b044abd5905edfe2b85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleFoodFactory
-  foodPrefab: {fileID: 223823169414339083, guid: 695e215cc6aa1df48ab621c8cfef9b88, type: 3}
---- !u!4 &335455197
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335455195}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &356546531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,7 +1195,7 @@ Transform:
   m_GameObject: {fileID: 608131105}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 2.55, z: 0}
+  m_LocalPosition: {x: 0.05, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1554,6 +1509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 816793875}
   - component: {fileID: 816793874}
+  - component: {fileID: 816793876}
   m_Layer: 0
   m_Name: FoodSpawnManager
   m_TagString: Untagged
@@ -1573,7 +1529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6976daf0a16c254ca850889373a18c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodSpawnManager
-  factory: {fileID: 335455196}
+  factory: {fileID: 816793876}
   spawnBounds: {x: 8, y: 4}
 --- !u!4 &816793875
 Transform:
@@ -1590,6 +1546,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &816793876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816793873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707c0d19284b8b044abd5905edfe2b85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleFoodFactory
+  foodPrefab: {fileID: 223823169414339083, guid: 695e215cc6aa1df48ab621c8cfef9b88, type: 3}
 --- !u!1 &869163411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,7 +1935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3863763559637429006, guid: 02cf3d87bb9ae074e93999e0851ee6af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 3863763559637429006, guid: 02cf3d87bb9ae074e93999e0851ee6af, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2047,7 +2016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3863763559637429006, guid: 02cf3d87bb9ae074e93999e0851ee6af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 3863763559637429006, guid: 02cf3d87bb9ae074e93999e0851ee6af, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2509,7 +2478,7 @@ Transform:
   m_GameObject: {fileID: 1758485841}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.34144, y: 0.18941, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2871,7 +2840,6 @@ SceneRoots:
   - {fileID: 608131107}
   - {fileID: 1226592569}
   - {fileID: 1337827719}
-  - {fileID: 335455197}
   - {fileID: 816793875}
   - {fileID: 236124354}
   - {fileID: 1758485843}

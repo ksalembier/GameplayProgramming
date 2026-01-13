@@ -12,8 +12,6 @@ public class FoodSpawnManager : MonoBehaviour
 
     void SpawnFood()
     {
-        // Vector2 pos = Random.insideUnitCircle * 4f;
-
         Vector2 pos = new Vector2(
             Random.Range(-spawnBounds.x, spawnBounds.x),
             Random.Range(-spawnBounds.y, spawnBounds.y)
