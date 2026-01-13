@@ -17,8 +17,8 @@ public class EndRoundSummaryUI : MonoBehaviour
         foreach (var result in EndRoundData.Results)
         {
             summaryText.text +=
-                $"Player {result.playerID}\n" +
-                $"Score: {Mathf.FloorToInt(result.score)}\n";
+                $"Player {result.playerID + 1}\n" +
+                $"Score: {Mathf.FloorToInt(result.score)}\n\n";
         }
     }
 

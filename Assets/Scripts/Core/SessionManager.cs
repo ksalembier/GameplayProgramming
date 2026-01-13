@@ -30,7 +30,8 @@ public class SessionManager : MonoBehaviour
     {
         sessionActive = false;
 
-        // Capture final results
+        // final results
+
         EndRoundData.Capture();
 
         SceneFlowManager.LoadEndScene();

@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameConfig
   baseSpeed: 3
   energyDrainRate: 1
-  foodRestoreAmount: 25
   scoreThresholds: 32000000960000005e010000bc020000
-  sessionDuration: 120
-  foodSpawnInterval: 8
+  sessionDuration: 60

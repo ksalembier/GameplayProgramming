@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3768757995138589041}
   - component: {fileID: 8946020345654408944}
   m_Layer: 0
-  m_Name: Food_Prefab
+  m_Name: Energy_Food_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
